@@ -1,9 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    </script>
-
-<style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refrigeração 100</title>
+    
+    <meta name="description" content="Refrigeração, manutenção e instalação de ar condicionado, máquina de lavar e geladeiras.">
+    <meta name="keywords" content="Assistência Técnica especializada, manutenção, conserto,Assistência Técnica Brastemp,Assistência Técnica Eletrolux,Assistência Técnica Consul.">
+    <meta name="robots" content="index, follow">
+    <meta name="autor" content="Rhian Mello">
+    <link rel="stylesheet" type="text/css" href="css/folhadeestilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="img/iconepequeno.png">
+    
+    <style>
         * {
             box-sizing: border-box;
         }
@@ -33,6 +46,7 @@
 
         .form-container h2 {
             margin-top: 0;
+            text-align: center; /* Centraliza o título "Laudo" */
         }
 
         .form-container label {
@@ -64,24 +78,6 @@
         }
     </style>
 </head>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refrigeração 100</title>
-    
-    <meta name="description" content="Refrigeração, manutenção e instalação de ar condicionado, máquina de lavar e geladeiras.">
-    <meta name="keywords" content="Assistência Técnica especializada, manutenção, conserto,Assistência Técnica Brastemp,Assistência Técnica Eletrolux,Assistência Técnica Consul.">
-    <meta name="robots" content="index, follow">
-    <meta name="autor" content="Rhian Mello">
-    <link rel="stylesheet" type="text/css" href="css/folhadeestilo.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="icon" href="img/iconepequeno.png">
-</head>
 <body>
     <!-- CABEÇALHO --> 
     <header class="cabecalho container">
@@ -105,32 +101,30 @@
 
     <!-- Laudo -->
     <div class="container">
-	    
-<img src="https://github.com/rhianmello/Refrigeracao100/blob/main/img/iconegrande.png" alt="Logo da Refrigeração 100">
-    <h1 class="logo">Refrigeração 100</h1>
-	    
+        <h1 class="logo">Refrigeração 100</h1>
+           
         <div class="form-container">
-            
+            <h2>Laudo</h2> <!-- Título "Laudo" centralizado -->
+            <h4>Empresa: Refrigeração 100<br>
+                CNPJ: 38.092.435/0001-86<br>
+                Cel: (21)98567-0319</h4>
+            <br>
             <form id="formLaudo">
-	    <h2>Laudo</h2>
-            <h4>Empresa: Refrigeração 100</br>
-                CNPJ: 38.092.435/0001-86</br>
-		Cel: (21)98567-0319</h4>
                 <label for="nome">Cliente:</label>
                 <input type="text" id="nome" required>
-
+                <br><br>
                 <label for="cpf">CPF:</label>
                 <input type="text" id="cpf" required>
-
+                <br><br>
                 <label for="cel2">Cel:</label>
                 <input type="text" id="cel2" required>
-
+                <br><br>
                 <label for="laudo">Laudo técnico:</label>
                 <textarea id="laudo" required></textarea>
-
+                <br><br>
                 <label for="valor">Valor Final: R$</label>
                 <input type="text" id="valor" required>
-
+                <br><br>
                 <button type="button" onclick="gerarPDF()">Imprimir</button>
             </form>
         </div>
@@ -152,15 +146,14 @@
         var dataElement = document.getElementById('data');
         dataElement.textContent = dataAtual.toLocaleDateString();
     </script>
-</body>
-	<br><br><br><br><br><br>
+    
+    <br><br><br><br><br><br>
 	
-        <!-- RODAPÉ -->
-        <footer class="rodape bg-gradient">
-        
-            <div class="wh-embellishment-line" style="width: 20%;margin: -17px auto 10px;">
-               <p><b>Marcos José De Souza Freitas </b></p>
-            </div>
-        </footer>   
-            
+    <!-- RODAPÉ -->
+    <footer class="rodape bg-gradient">
+        <div class="wh-embellishment-line" style="width: 20%;margin: -17px auto 10px;">
+            <p><b>Marcos José De Souza Freitas </b></p>
+        </div>
+    </footer>   
+</body>
 </html>
